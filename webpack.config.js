@@ -28,8 +28,8 @@ module.exports = {
       filename: "index.html"
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src', 'contact.html'),
-      filename: "contact.html"
+      template: path.resolve(__dirname, 'src', 'main-page.html'),
+      filename: "main-page.html"
     }),
     new MiniCssExtractPlugin({
       filename: 'index.[contenthash].css',

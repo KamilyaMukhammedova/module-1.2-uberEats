@@ -1,0 +1,104 @@
+.header-block {
+  background-color: $whiteColor;
+  padding: 15px 49px 15px 19px;
+  box-shadow: -2px 15px 15px -3px #E5E5E5;
+
+  &__logo-block {
+    margin: 8px 0 0 24px;
+
+    @include medium {
+      margin: 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+
+    @include large {
+      display: block;
+    }
+  }
+
+  &__box1 {
+    @include large {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__registration {
+    font-weight: 500;
+    font-size: 13px;
+
+    @include large {
+      background-color: #D3D3D3;
+    }
+  }
+
+  &__menu-btn {
+    font-size: 30px;
+    color: $blackColor;
+    display: none;
+
+    @include large {
+      display: block;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+
+    @include large {
+      display: none;
+      margin-top: 20px;
+      padding-left: 5px;
+    }
+  }
+
+  &__list-item {
+    display: inline-block;
+
+    @include large {
+      display: block;
+      margin-bottom: 7px;
+    }
+  }
+
+  &__sign-in, &__register {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2px;
+    margin-left: 13px;
+
+    @include large {
+      display: block;
+      margin-left: 0;
+      border-radius: 0;
+    }
+  }
+
+  &__sign-in {
+    color: inherit;
+    border: 1px solid $lightGrey;
+    padding: 8px 19px;
+
+    @include large {
+      border: none;
+      padding: 0;
+    }
+  }
+
+  &__register {
+    color: $whiteColor;
+    background-color: #262626;
+    padding: 8px 15px 8px 17px;
+
+    @include large {
+      background-color: transparent;
+      color: $blackColor;
+      padding: 0;
+    }
+  }
+}
