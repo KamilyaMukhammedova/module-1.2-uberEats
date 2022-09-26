@@ -1,0 +1,80 @@
+.place-card-block {
+  @include small {
+    text-align: center;
+  }
+
+  &__inner-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+
+    @include small {
+      display: block;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__card:hover {
+    background-color: #757575;
+  }
+
+  &__link:hover {
+    color: $blackColor;
+  }
+
+  &__card {
+    border: 1px solid #A0A0A0;
+    padding: 14px 20px 0 14px;
+    width: 49%;
+    margin-bottom: 5%;
+
+    @include small {
+      width: 100%;
+    }
+  }
+
+  &_card2 {
+    width: 49.3%;
+
+    @include large {
+      width: 49%;
+    }
+
+    @include small {
+      width: 100%;
+    }
+  }
+
+  &__name {
+    margin-bottom: 5px;
+  }
+
+  &__description {
+    color: #626262;
+    font-size: 13px;
+    line-height: 21px;
+    margin-bottom: 58px;
+
+    @include large {
+      margin-bottom: 45px;
+    }
+
+    @include small {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__time {
+    font-size: 15px;
+    line-height: 21px;
+
+    @include small {
+      font-size: 12px;
+    }
+  }
+}
