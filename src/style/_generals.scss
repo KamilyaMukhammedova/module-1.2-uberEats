@@ -19,7 +19,11 @@ body {
 .content {
   margin: 0 auto;
   max-width: 1124px;
-  //background-color: $mainBgColor;
+
+  @include large {
+    position: relative;
+    height: 100vh;
+  }
 }
 
 .container {

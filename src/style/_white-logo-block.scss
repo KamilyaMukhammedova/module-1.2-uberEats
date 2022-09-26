@@ -1,0 +1,7 @@
+.white-logo-block {
+  &__logo {
+    @include medium {
+      width: 35%;
+    }
+  }
+}

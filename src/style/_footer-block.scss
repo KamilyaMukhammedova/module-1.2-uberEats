@@ -1,0 +1,35 @@
+.footer-block {
+  background-color: $footerBlack;
+  padding: 5.8% 6.9% 3.2% 6.3%;
+  margin-top: 8.2%;
+
+  @include large {
+    padding: 5.8% 4% 3.2% 4%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  @include small {
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 11px;
+    line-height: 12.89px;
+    margin-top: 40px;
+
+    @include small {
+      margin-top: 30px;
+    }
+  }
+
+  &__logo-block {
+    margin-bottom: 39.5px;
+
+    @include small {
+      margin-bottom: 25px;
+    }
+  }
+}
