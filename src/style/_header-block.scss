@@ -1,8 +1,12 @@
 .header-block {
   background-color: $whiteColor;
-  padding: 15px 49px 15px 19px;
+  padding: 19px 49px 15px 19px;
   box-shadow: -2px 15px 15px -3px #E5E5E5;
   margin-bottom: 8.3%;
+
+  @include small {
+    padding: 0 4px 15px 7px;
+  }
 
   &__logo-block {
     margin: 8px 0 0 24px;
@@ -10,45 +14,25 @@
     @include medium {
       margin: 0;
     }
+
+    @include small {
+      margin-top: 24px;
+    }
   }
 
   &__nav {
     display: flex;
     justify-content: space-between;
-
-    @include large {
-      display: block;
-    }
-  }
-
-  &__box1 {
-    @include large {
-      display: flex;
-      justify-content: space-between;
-    }
   }
 
   &__registration {
     font-weight: 500;
     font-size: 13px;
 
-    @include large {
-      background-color: #D3D3D3;
-      padding-left: 20px;
-    }
-
-    @include medium {
-      padding-left: 0;
-    }
-  }
-
-  &__menu-btn {
-    font-size: 30px;
-    color: $blackColor;
-    display: none;
-
-    @include large {
-      display: block;
+    @include small {
+      font-size: 11px;
+      line-height: 12.89px;
+      margin-top: 17px;
     }
   }
 
@@ -56,20 +40,13 @@
     list-style: none;
     margin: 0;
 
-    @include large {
-      display: none;
-      margin-top: 20px;
-      padding-left: 5px;
+    @include small {
+      padding-left: 0;
     }
   }
 
   &__list-item {
     display: inline-block;
-
-    @include large {
-      display: block;
-      margin-bottom: 7px;
-    }
   }
 
   &__sign-in, &__register {
@@ -78,10 +55,10 @@
     border-radius: 2px;
     margin-left: 13px;
 
-    @include large {
-      display: block;
-      margin-left: 0;
-      border-radius: 0;
+    &:hover {
+      border-color: transparent;
+      background-color: $greenColor;
+      color: $whiteColor;
     }
   }
 
@@ -90,9 +67,9 @@
     border: 1px solid $lightGrey;
     padding: 8px 19px;
 
-    @include large {
-      border: none;
-      padding: 0;
+    @include small {
+      padding: 12px 20px 14px 17px;
+      margin-left: 9px;
     }
   }
 
@@ -101,10 +78,9 @@
     background-color: #262626;
     padding: 8px 15px 8px 17px;
 
-    @include large {
-      background-color: transparent;
-      color: $blackColor;
-      padding: 0;
+    @include small {
+      padding: 13px 15px 14px 16px;
+      margin-left: 9px;
     }
   }
 }

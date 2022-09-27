@@ -20,7 +20,13 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    filename: 'index.[contenthash].js',
+    filename: 'assets/index.[contenthash].js',
+    assetModuleFilename: "assets/[name][ext]"
+  },
+  resolve: {
+    alias: {
+      'img': './img'
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -32,7 +38,7 @@ module.exports = {
       filename: "main-page.html"
     }),
     new MiniCssExtractPlugin({
-      filename: 'index.[contenthash].css',
+      filename: 'index.[contenthash].css'
     }),
   ],
   module: {
@@ -60,10 +66,11 @@ module.exports = {
       {
         test: /\.ttf$/,
         type: 'asset/resource',
-        generator: {
-          filename: 'fonts/[name].[ext]'
-        }
-      }
+      },
+      {
+        test: /\.(png|jpg|svg|gif)$/,
+        type: 'asset/resource',
+      },
     ]
   }
 }

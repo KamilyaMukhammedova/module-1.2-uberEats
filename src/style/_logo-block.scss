@@ -1,3 +1,7 @@
 .logo-block {
-
+  &__logo {
+   @include small {
+     width: 89%;
+   }
+  }
 }

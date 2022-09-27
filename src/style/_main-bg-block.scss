@@ -1,0 +1,110 @@
+.main-bg-block {
+  background: url("img/main-pic.png") 50% 50%/100% no-repeat;
+  position: relative;
+  height: 364px;
+
+  @include large {
+    background-size: cover;
+  }
+
+  @include small {
+    background: url("img/photo.png") 50% 50%/100% no-repeat;
+    padding-left: 3px;
+    height: 255px;
+  }
+
+  &__card {
+    background-color: #FFFFFF;
+    width: 34.6%;
+    position: absolute;
+    top: 22%;
+    left: 7.2%;
+    padding: 36px 0 22px 39px;
+
+    @include large {
+      padding: 2%;
+      width: 40%;
+      text-align: center;
+    }
+
+    @include small {
+      box-shadow: -2px 15px 15px -3px #E5E5E5;
+      padding: 24px 0 23px 0;
+      width: 96.3%;
+      top: 51%;
+      left: 2.2%;
+      right: 2%;
+    }
+  }
+
+  &__text {
+    font-size: 36px;
+    line-height: 42.19px;
+
+    @include large {
+      font-size: 32px;
+      line-height: 35px;
+    }
+
+    @include medium {
+      font-size: 28px;
+      line-height: 31px;
+    }
+
+    @include small {
+      font-size: 24px;
+      line-height: 28.13px;
+    }
+  }
+
+  &__descr {
+    font-size: 14px;
+    line-height: 16.41px;
+    color: #626262;
+    margin-top: 15px;
+    margin-right: 47px;
+
+    @include medium {
+      width: 100%;
+    }
+
+    @include small {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__time {
+    font-size: 13px;
+    line-height: 15.23px;
+    background-color: $blackColor;
+    color: $whiteColor;
+    width: 26% !important;
+    border-radius: 20px;
+    padding: 9px 11px 8px 7px;
+    text-align: center;
+    margin-top: 5px;
+
+    @include medium {
+      width: 60% !important;
+      margin: 0 auto;
+    }
+
+    @include small {
+      width: 30% !important;
+      padding: 9px 11px 9px 13px;
+      margin: 0 3% 0 35%;
+    }
+  }
+
+  &__inner-flex {
+    margin-top: 50px;
+
+    @include medium {
+      display: block;
+    }
+
+    @include small {
+      margin-top: 41px;
+    }
+  }
+}
