@@ -2,10 +2,7 @@
   background: url("img/main-pic.png") 50% 50%/100% no-repeat;
   position: relative;
   height: 364px;
-
-  @include large {
-    background-size: cover;
-  }
+  background-size: cover;
 
   @include small {
     background: url("img/photo.png") 50% 50%/100% no-repeat;
@@ -19,7 +16,7 @@
     position: absolute;
     top: 22%;
     left: 7.2%;
-    padding: 36px 0 22px 39px;
+    padding: 36px 20px 28px 39px;
 
     @include large {
       padding: 2%;
@@ -84,6 +81,19 @@
     text-align: center;
     margin-top: 5px;
 
+    position: absolute;
+    bottom: 10%;
+    right: 8%;
+
+    &:hover {
+      background-color: #327430;
+      cursor: pointer;
+    }
+
+    @include large {
+      position: static;
+    }
+
     @include medium {
       width: 60% !important;
       margin: 0 auto;
@@ -92,7 +102,7 @@
     @include small {
       width: 30% !important;
       padding: 9px 11px 9px 13px;
-      margin: 0 3% 0 35%;
+      margin: 0 auto;
     }
   }
 

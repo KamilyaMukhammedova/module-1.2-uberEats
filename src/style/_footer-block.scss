@@ -1,6 +1,6 @@
 .footer-block {
   background-color: $footerBlack;
-  padding: 5.8% 6.9% 3.2% 6.3%;
+  padding: 5.8% 7.9% 3.2% 7.3%;
   margin-top: 8.2%;
 
   @include large {
@@ -12,7 +12,21 @@
   }
 
   @include small {
-    text-align: center;
+    padding-left: 8px;
+    padding-top: 53px;
+    padding-bottom: 20px;
+  }
+
+  &_mt {
+    margin-top: 2.9%;
+
+    @include large {
+      position: static;
+    }
+
+    @include small {
+      margin-top: 37px;
+    }
   }
 
   &__text {
@@ -21,7 +35,7 @@
     margin-top: 40px;
 
     @include small {
-      margin-top: 30px;
+      margin-top: 39px;
     }
   }
 
@@ -29,7 +43,7 @@
     margin-bottom: 39.5px;
 
     @include small {
-      margin-bottom: 25px;
+      margin-bottom: 39px;
     }
   }
 }

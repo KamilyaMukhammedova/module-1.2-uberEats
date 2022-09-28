@@ -3,5 +3,9 @@
     @include medium {
       width: 35%;
     }
+
+    @include small {
+      width: 192px;
+    }
   }
 }

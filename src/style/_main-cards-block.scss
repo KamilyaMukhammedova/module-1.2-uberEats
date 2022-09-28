@@ -1,0 +1,180 @@
+.main-cards-block {
+  @include small {
+    margin-top: 113px;
+  }
+
+  &__divider {
+    display: none;
+
+    @include small {
+      display: block;
+      width: 51px;
+      margin: 11px auto 42px;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 24px 0 36px 7.3%;
+
+    @include small {
+      line-height: 34px;
+      text-align: center;
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  &__descr {
+    color: #626262;
+    font-size: 13px;
+    line-height: 21px;
+    margin-top: 0;
+    
+    @include large {
+      font-size: 12px;
+      line-height: 19px;
+    }
+
+    @include small {
+      font-size: 13px;
+      line-height: 21px;
+    }
+  }
+
+  &__price {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 500;
+    margin-top: 84px;
+
+    @include large {
+      margin-top: 84px;
+    }
+
+    @include small {
+      margin-top: 41px;
+    }
+  }
+
+  &__card {
+    border: 1px solid $hoverGrey;
+    border-radius: 2px;
+    width: 46%;
+    margin-bottom: 46px;
+    margin-right: 16px;
+    padding-right: 0;
+    padding-left: 15px;
+    height: 162px;
+
+    &:hover {
+      background-color: $hoverGrey;
+      cursor: pointer;
+    }
+
+    @include medium {
+      width: 95%;
+    }
+
+    @include small {
+      height: 104px;
+      border-bottom: 1px solid $hoverGrey;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      margin-left: 10px;
+      width: 92.3%;
+      margin-bottom: 15px;
+      padding-left: 0;
+    }
+  }
+
+  &__img {
+    @include small {
+      width: 102px;
+      height: 103px;
+    }
+  }
+
+  &__card-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__inner-flex {
+    padding: 0 3% 0 8.3%;
+
+    @include medium {
+      display: block;
+    }
+
+    @include small {
+      padding: 0 0 0 9px;
+      margin-top: 20px;
+    }
+  }
+
+  &__name {
+    margin-top: 16px;
+    margin-bottom: 4px;
+
+    @include large {
+      margin-top: 7px;
+      font-size: 15px;
+      line-height: 21px;
+    }
+
+    @include medium {
+      margin-top: 22px;
+      font-size: 16px;
+    }
+
+    @include small {
+      font-size: 14px;
+      line-height: 24px;
+      margin-top: 0;
+    }
+  }
+
+  &_price-plate1 {
+    margin-top: 24%;
+
+    @include large {
+      margin-top: 39px;
+    }
+
+    @include small {
+      margin-top: 16px;
+    }
+  }
+
+  &__box2 {
+    @include large {
+      width: 200px;
+      text-align: right;
+    }
+
+    @include small {
+      width: 102px;
+    }
+  }
+
+  &__box1 {
+    padding-right: 15px;
+  }
+
+  &_full-name {
+    @include small {
+      display: none;
+    }
+  }
+
+  &_short-name {
+    display: none;
+
+    @include small {
+      display: block;
+    }
+  }
+}
